@@ -10,6 +10,7 @@ import android.widget.Toast;
 import com.hello.test.learnandroid.learndata.ExternalStorageActivity;
 import com.hello.test.learnandroid.learndata.InternalStorageActivity;
 import com.hello.test.learnandroid.learndata.LearnPreferencesActivity;
+import com.hello.test.learnandroid.learndata.LearnUsingLoaderActivity;
 import com.hello.test.learnandroid.learndata.LearnUsingSQLIteActivity;
 import com.hello.test.learnandroid.learndata.ReadingResourceFilesActivity;
 
@@ -47,6 +48,10 @@ public class LearnDataMainActivity extends AppCompatActivity{
 
   public void onClickLearnUsingSQLIteActivity(View view){
     Intent intent = new Intent(getApplicationContext(), LearnUsingSQLIteActivity.class);
+    startActivity(intent);
+  }
+  public void onClickLearnUsingLoaderActivity(View view){
+    Intent intent = new Intent(getApplicationContext(), LearnUsingLoaderActivity.class);
     startActivity(intent);
   }
 }
