@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">LearnAndroid</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_download">Download</string>
+
+    <string name="search_title">Search</string>
+    <string name="search_hint">Enter text to search</string>
+
+    <string name="menu_cast">Cast</string>
+    <string name="menu_print">Print</string>
+    <string name="title_activity_learn_contextual_batch">LearnContextualBatchActivity</string>
+
+    <string name="menu_move">Move</string>
+    <string name="menu_delete">Delete</string>
+
+    <!-- this is for popup menu -->
+    <string name="menu_reply">Reply</string>
+    <string name="menu_reply_all">Reply All</string>
+    <string name="menu_forward">Forward</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_change_fragment_at_runtime">ChangeFragmentAtRuntimeActivity
+    </string>
+    <string name="title_activity_learn_communicate_with_other_fragment">
+        LearnCommunicateWithOtherFragment
+    </string>
+    <string name="title_activity_searchable_menu">SearchableMenuActivity</string>
+    <string name="title_activity_search_result">SearchResultActivity</string>
+</resources>

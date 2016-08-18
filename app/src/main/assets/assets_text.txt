@@ -1,0 +1,2 @@
+this is asset text... in asset there are no limitation for naming and what kind of resource
+they can handle
