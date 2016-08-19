@@ -46,6 +46,10 @@
         android:onClick="onClickDataSectionBtn"/>
     
     <Button
+        android:layout_below="@id/dataSectionBtn"
+        android:id="@+id/notificationsAndAlerts"
+        android:text="Notifications and Alerts"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:onClick="onClickNotificationsAndAlerts"/>
 </RelativeLayout>

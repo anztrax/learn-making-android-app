@@ -9,6 +9,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.hello.test.learnandroid.notificationandalerts.LearnLightActionSoundActivity;
+
 public class MainActivity extends Activity {
   private final String KEY_DUPLICATE = "duplicate";
 
@@ -33,6 +35,10 @@ public class MainActivity extends Activity {
 
   public void onClickDataSectionBtn(View v){
     Intent intent = new Intent(getApplicationContext(),LearnDataMainActivity.class);
+    startActivity(intent);
+  }
+  public void onClickNotificationsAndAlerts(View v){
+    Intent intent = new Intent(getApplicationContext(), LearnLightActionSoundActivity.class);
     startActivity(intent);
   }
 
