@@ -38,7 +38,7 @@ public class MainActivity extends Activity {
     startActivity(intent);
   }
   public void onClickNotificationsAndAlerts(View v){
-    Intent intent = new Intent(getApplicationContext(), LearnLightActionSoundActivity.class);
+    Intent intent = new Intent(getApplicationContext(), LearnNotificationAndAlertMainActivity.class);
     startActivity(intent);
   }
 
