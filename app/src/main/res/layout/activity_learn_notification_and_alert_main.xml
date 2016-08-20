@@ -18,8 +18,28 @@
         android:layout_height="wrap_content"
         android:onClick="onClickGotoLearnLightActionSoundActivity" />
     <Button
-        android:text="Light, Action, Sound"
+        android:text="Custom Toast Activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClickCustomToastActivity" />
+    <Button
+        android:text="Alert Dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickAlertDialogActivity"/>
+    <Button
+        android:text="Progress Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickProgressActivity"/>
+    <Button
+        android:text="Lignt, Action, Sound Redux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickLightSoundActionReduxAction"/>
+    <Button
+        android:text="Media Player Notification Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickMediaPlayerNotificationActivity"/>
 </LinearLayout>

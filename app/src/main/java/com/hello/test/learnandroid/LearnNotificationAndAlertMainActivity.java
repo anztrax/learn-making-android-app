@@ -5,8 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.hello.test.learnandroid.notificationandalerts.AlertDialogActivity;
 import com.hello.test.learnandroid.notificationandalerts.CustomToastActivity;
 import com.hello.test.learnandroid.notificationandalerts.LearnLightActionSoundActivity;
+import com.hello.test.learnandroid.notificationandalerts.LightActionSoundReduxActivity;
+import com.hello.test.learnandroid.notificationandalerts.MediaPlayerNotificationActivity;
+import com.hello.test.learnandroid.notificationandalerts.ProgressActivity;
 
 public class LearnNotificationAndAlertMainActivity extends AppCompatActivity {
 
@@ -23,6 +27,26 @@ public class LearnNotificationAndAlertMainActivity extends AppCompatActivity {
 
   public void onClickCustomToastActivity(View view){
     Intent intent = new Intent(getApplicationContext(),CustomToastActivity.class);
+    startActivity(intent);
+  }
+
+  public void onClickAlertDialogActivity(View view){
+    Intent intent = new Intent(getApplicationContext(), AlertDialogActivity.class);
+    startActivity(intent);
+  }
+
+  public void onClickProgressActivity(View view){
+    Intent intent = new Intent(getApplicationContext(), ProgressActivity.class);
+    startActivity(intent);
+  }
+
+  public void onClickLightSoundActionReduxAction(View view){
+    Intent intent = new Intent(getApplicationContext(), LightActionSoundReduxActivity.class);
+    startActivity(intent);
+  }
+
+  public void onClickMediaPlayerNotificationActivity(View view){
+    Intent intent = new Intent(getApplicationContext(), MediaPlayerNotificationActivity.class);
     startActivity(intent);
   }
 }

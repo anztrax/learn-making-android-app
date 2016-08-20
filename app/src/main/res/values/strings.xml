@@ -6,6 +6,8 @@
     <string name="search_title">Search</string>
     <string name="search_hint">Enter text to search</string>
 
+    <string name="dialog_neutral">Neutral</string>
+
     <string name="menu_cast">Cast</string>
     <string name="menu_print">Print</string>
     <string name="title_activity_learn_contextual_batch">LearnContextualBatchActivity</string>
