@@ -103,6 +103,12 @@
             android:name=".notificationandalerts.FlashLightWithHeadsUpActivity"
             android:launchMode="singleInstance">
         </activity>
+        <activity android:name=".TouchScreenAndSensorsMainActivity">
+        </activity>
+        <activity android:name=".touchscreenandsensors.PressEventsActivity">
+        </activity>
+        <activity android:name=".touchscreenandsensors.CommonGestureActivity">
+        </activity>
     </application>
 
 </manifest>
