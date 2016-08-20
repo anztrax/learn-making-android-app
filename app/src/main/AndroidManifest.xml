@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
 
     <application
         android:allowBackup="true"
@@ -98,6 +98,10 @@
         <activity android:name=".notificationandalerts.LightActionSoundReduxActivity">
         </activity>
         <activity android:name=".notificationandalerts.MediaPlayerNotificationActivity">
+        </activity>
+        <activity
+            android:name=".notificationandalerts.FlashLightWithHeadsUpActivity"
+            android:launchMode="singleInstance">
         </activity>
     </application>
 

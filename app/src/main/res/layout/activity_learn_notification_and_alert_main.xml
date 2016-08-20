@@ -42,4 +42,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClickMediaPlayerNotificationActivity"/>
+    <Button
+        android:text="Flash Light With Heads Up Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickFlashLightWithHeadsUpActivity"/>
 </LinearLayout>

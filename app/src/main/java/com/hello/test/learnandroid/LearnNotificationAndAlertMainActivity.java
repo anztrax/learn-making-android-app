@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.hello.test.learnandroid.notificationandalerts.AlertDialogActivity;
 import com.hello.test.learnandroid.notificationandalerts.CustomToastActivity;
+import com.hello.test.learnandroid.notificationandalerts.FlashLightWithHeadsUpActivity;
 import com.hello.test.learnandroid.notificationandalerts.LearnLightActionSoundActivity;
 import com.hello.test.learnandroid.notificationandalerts.LightActionSoundReduxActivity;
 import com.hello.test.learnandroid.notificationandalerts.MediaPlayerNotificationActivity;
@@ -47,6 +48,11 @@ public class LearnNotificationAndAlertMainActivity extends AppCompatActivity {
 
   public void onClickMediaPlayerNotificationActivity(View view){
     Intent intent = new Intent(getApplicationContext(), MediaPlayerNotificationActivity.class);
+    startActivity(intent);
+  }
+
+  public void onClickFlashLightWithHeadsUpActivity(View view){
+    Intent intent = new Intent(getApplicationContext(), FlashLightWithHeadsUpActivity.class);
     startActivity(intent);
   }
 }
