@@ -109,6 +109,10 @@
         </activity>
         <activity android:name=".touchscreenandsensors.CommonGestureActivity">
         </activity>
+        <activity android:name=".touchscreenandsensors.MultiTouchZoomActivity">
+        </activity>
+        <activity android:name=".touchscreenandsensors.SwipeToRefreshActivity">
+        </activity>
     </application>
 
 </manifest>

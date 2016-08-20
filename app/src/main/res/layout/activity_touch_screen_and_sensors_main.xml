@@ -21,4 +21,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onCommonGestureActivity"/>
+
+    <Button
+        android:text="multi touch zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickMultiTouchZoomActivity"/>
+
+    <Button
+        android:text="Swipe to Refresh Activity"
+        android:onClick="onClickSwipeToRefreshActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

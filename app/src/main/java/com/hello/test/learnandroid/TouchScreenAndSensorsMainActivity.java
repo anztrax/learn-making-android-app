@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.hello.test.learnandroid.touchscreenandsensors.CommonGestureActivity;
+import com.hello.test.learnandroid.touchscreenandsensors.MultiTouchZoomActivity;
 import com.hello.test.learnandroid.touchscreenandsensors.PressEventsActivity;
+import com.hello.test.learnandroid.touchscreenandsensors.SwipeToRefreshActivity;
 
 public class TouchScreenAndSensorsMainActivity extends AppCompatActivity {
 
@@ -30,6 +32,16 @@ public class TouchScreenAndSensorsMainActivity extends AppCompatActivity {
 
   public void onCommonGestureActivity(View view){
     Intent intent = new Intent(getApplicationContext(), CommonGestureActivity.class);
+    startActivity(intent);
+  }
+
+  public void onClickMultiTouchZoomActivity(View view){
+    Intent intent = new Intent(getApplicationContext(), MultiTouchZoomActivity.class);
+    startActivity(intent);
+  }
+
+  public void onClickSwipeToRefreshActivity(View view){
+    Intent intent = new Intent(getApplicationContext(), SwipeToRefreshActivity.class);
     startActivity(intent);
   }
 }
