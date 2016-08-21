@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.hello.test.learnandroid.touchscreenandsensors.CommonGestureActivity;
+import com.hello.test.learnandroid.touchscreenandsensors.LearnReadingSensorDataActivity;
 import com.hello.test.learnandroid.touchscreenandsensors.MultiTouchZoomActivity;
 import com.hello.test.learnandroid.touchscreenandsensors.PressEventsActivity;
+import com.hello.test.learnandroid.touchscreenandsensors.SensorListActivity;
 import com.hello.test.learnandroid.touchscreenandsensors.SwipeToRefreshActivity;
 
 public class TouchScreenAndSensorsMainActivity extends AppCompatActivity {
@@ -44,4 +46,18 @@ public class TouchScreenAndSensorsMainActivity extends AppCompatActivity {
     Intent intent = new Intent(getApplicationContext(), SwipeToRefreshActivity.class);
     startActivity(intent);
   }
+
+  public void onClickSensorListActivity(View view){
+    startActivityGenerator(SensorListActivity.class);
+  }
+
+  public void onClickLearnReadingSensorDataActivity(View view){
+    startActivityGenerator(LearnReadingSensorDataActivity.class);
+  }
+
+  private void startActivityGenerator(Class clazz){
+    Intent intent = new Intent(getApplicationContext(), clazz);
+    startActivity(intent);
+  }
+
 }

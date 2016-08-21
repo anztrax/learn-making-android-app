@@ -33,4 +33,14 @@
         android:onClick="onClickSwipeToRefreshActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+    <Button
+        android:text="Sensor List Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickSensorListActivity" />
+    <Button
+        android:text="Reading Sensor Data Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickLearnReadingSensorDataActivity"/>
 </LinearLayout>
