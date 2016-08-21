@@ -9,6 +9,7 @@ import com.hello.test.learnandroid.touchscreenandsensors.CommonGestureActivity;
 import com.hello.test.learnandroid.touchscreenandsensors.LearnReadingSensorDataActivity;
 import com.hello.test.learnandroid.touchscreenandsensors.MultiTouchZoomActivity;
 import com.hello.test.learnandroid.touchscreenandsensors.PressEventsActivity;
+import com.hello.test.learnandroid.touchscreenandsensors.ReadingDeviceOrientationActivity;
 import com.hello.test.learnandroid.touchscreenandsensors.SensorListActivity;
 import com.hello.test.learnandroid.touchscreenandsensors.SwipeToRefreshActivity;
 
@@ -53,6 +54,10 @@ public class TouchScreenAndSensorsMainActivity extends AppCompatActivity {
 
   public void onClickLearnReadingSensorDataActivity(View view){
     startActivityGenerator(LearnReadingSensorDataActivity.class);
+  }
+
+  public void onClickReadingDeviceOrientationActivity(View view){
+    startActivityGenerator(ReadingDeviceOrientationActivity.class);
   }
 
   private void startActivityGenerator(Class clazz){

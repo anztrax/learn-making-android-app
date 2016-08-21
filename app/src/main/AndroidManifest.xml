@@ -122,7 +122,8 @@
         </activity>
         <activity android:name=".touchscreenandsensors.LearnReadingSensorDataActivity">
         </activity>
-        <activity android:name=".touchscreenandsensors.ReadingDeviceOrientationActivity">
+        <activity android:name=".touchscreenandsensors.ReadingDeviceOrientationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
         </activity>
     </application>
 

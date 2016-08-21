@@ -11,4 +11,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.hello.test.learnandroid.touchscreenandsensors.ReadingDeviceOrientationActivity">
 
+    <Button
+        android:text="Check Orientation"
+        android:onClick="checkOrientation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>
