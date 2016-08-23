@@ -138,6 +138,8 @@
         </activity>
         <activity android:name=".graphicandanimation.FlipCardActivity">
         </activity>
+        <activity android:name=".graphicandanimation.ZoomAnimationWithCustomTransitionActivity">
+        </activity>
     </application>
 
 </manifest>

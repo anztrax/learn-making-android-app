@@ -10,6 +10,7 @@ import com.hello.test.learnandroid.graphicandanimation.LearnHowToMakeCompassActi
 import com.hello.test.learnandroid.graphicandanimation.LearnSimpleImageSliderActivity;
 import com.hello.test.learnandroid.graphicandanimation.LoadLargeImageActivity;
 import com.hello.test.learnandroid.graphicandanimation.TransitionAnimationActivity;
+import com.hello.test.learnandroid.graphicandanimation.ZoomAnimationWithCustomTransitionActivity;
 
 public class LearnGraphicAndAnimationMainActivity extends AppCompatActivity {
 
@@ -41,6 +42,11 @@ public class LearnGraphicAndAnimationMainActivity extends AppCompatActivity {
 
   public void onClickFlipCardActivity(View view){
     Intent intent = new Intent(getApplicationContext(),FlipCardActivity.class);
+    startActivity(intent);
+  }
+
+  public void onClickZoomAnimationWithCustomTransitionActivity(View view){
+    Intent intent = new Intent(getApplicationContext(), ZoomAnimationWithCustomTransitionActivity.class);
     startActivity(intent);
   }
 }
