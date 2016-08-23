@@ -62,9 +62,17 @@
         android:onClick="onClickTouchScreenAndSensorsActivity"/>
 
     <Button
+        android:id="@+id/learnGraphicAndAnimationMainActivityBtn"
         android:layout_below="@id/touchScreenAndSensors"
         android:onClick="onClickLearnGraphicAndAnimationMainActivity"
         android:text="Learn Graphic And Animation Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_below="@id/learnGraphicAndAnimationMainActivityBtn"
+        android:onClick="onClickLearnOpenGLMainActivity"
+        android:text="Learn Open GL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 </RelativeLayout>

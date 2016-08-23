@@ -51,6 +51,10 @@ public class MainActivity extends Activity {
     Intent intent = new Intent(getApplicationContext(), LearnGraphicAndAnimationMainActivity.class);
     startActivity(intent);
   }
+  public void onClickLearnOpenGLMainActivity(View view){
+    Intent intent = new Intent(getApplicationContext(), LearnOpenGLMainActivity.class);
+    startActivity(intent);
+  }
 
   private void doMainActionIntent(String actionString,String message){
     Intent mainActivityIntent = new Intent(this,MainActivity.class);
