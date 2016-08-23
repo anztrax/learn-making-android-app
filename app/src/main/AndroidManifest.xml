@@ -122,8 +122,19 @@
         </activity>
         <activity android:name=".touchscreenandsensors.LearnReadingSensorDataActivity">
         </activity>
-        <activity android:name=".touchscreenandsensors.ReadingDeviceOrientationActivity"
+        <activity
+            android:name=".touchscreenandsensors.ReadingDeviceOrientationActivity"
             android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <activity android:name=".graphicandanimation.LoadLargeImageActivity">
+        </activity>
+        <activity android:name=".LearnGraphicAndAnimationMainActivity">
+        </activity>
+        <activity android:name=".graphicandanimation.TransitionAnimationActivity">
+        </activity>
+        <activity android:name=".graphicandanimation.LearnHowToMakeCompassActivity">
+        </activity>
+        <activity android:name=".graphicandanimation.LearnSimpleImageSliderActivity">
         </activity>
     </application>
 
