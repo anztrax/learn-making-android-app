@@ -31,4 +31,9 @@
         android:onClick="onClickLearnSimpleImageSliderActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+    <Button
+        android:text="Flip Card Activity"
+        android:onClick="onClickFlipCardActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

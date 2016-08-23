@@ -136,6 +136,8 @@
         </activity>
         <activity android:name=".graphicandanimation.LearnSimpleImageSliderActivity">
         </activity>
+        <activity android:name=".graphicandanimation.FlipCardActivity">
+        </activity>
     </application>
 
 </manifest>

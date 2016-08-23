@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.hello.test.learnandroid.graphicandanimation.FlipCardActivity;
 import com.hello.test.learnandroid.graphicandanimation.LearnHowToMakeCompassActivity;
 import com.hello.test.learnandroid.graphicandanimation.LearnSimpleImageSliderActivity;
 import com.hello.test.learnandroid.graphicandanimation.LoadLargeImageActivity;
@@ -35,6 +36,11 @@ public class LearnGraphicAndAnimationMainActivity extends AppCompatActivity {
 
   public void onClickLearnSimpleImageSliderActivity(View view){
     Intent intent = new Intent(LearnGraphicAndAnimationMainActivity.this, LearnSimpleImageSliderActivity.class);
+    startActivity(intent);
+  }
+
+  public void onClickFlipCardActivity(View view){
+    Intent intent = new Intent(getApplicationContext(),FlipCardActivity.class);
     startActivity(intent);
   }
 }
