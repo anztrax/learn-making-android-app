@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.hello.test.learnandroid.opengles.DrawSimpleShapeActivity;
+import com.hello.test.learnandroid.opengles.ProjectionAndCameraActivity;
 import com.hello.test.learnandroid.opengles.SimpleOpenGL;
 
 public class LearnOpenGLMainActivity extends AppCompatActivity {
@@ -23,6 +24,11 @@ public class LearnOpenGLMainActivity extends AppCompatActivity {
 
   public void onClickDrawSimpleShapeActivity(View view){
     Intent intent = new Intent(getApplicationContext(), DrawSimpleShapeActivity.class);
+    startActivity(intent);
+  }
+
+  public void onClickProjectionAndCameraActivity(View view){
+    Intent intent = new Intent(getApplicationContext(), ProjectionAndCameraActivity.class);
     startActivity(intent);
   }
 }

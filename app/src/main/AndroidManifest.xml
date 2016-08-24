@@ -13,7 +13,9 @@
     <uses-feature
         android:name="android.hardware.sensor.compass"
         android:required="true"/>
-    <uses-feature android:glEsVersion="0x00010001" android:required="true" />
+    <uses-feature
+        android:glEsVersion="0x00010001"
+        android:required="true"/>
 
     <application
         android:allowBackup="true"
@@ -146,6 +148,10 @@
         <activity android:name=".LearnOpenGLMainActivity">
         </activity>
         <activity android:name=".opengles.DrawSimpleShapeActivity">
+        </activity>
+        <activity android:name=".opengles.ProjectionAndCameraActivity">
+        </activity>
+        <activity android:name=".opengles.CreatingMovementActivity">
         </activity>
     </application>
 
