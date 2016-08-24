@@ -7,14 +7,17 @@ import android.opengl.Matrix;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MotionEvent;
 
-import com.hello.test.learnandroid.R;
 import com.hello.test.learnandroid.opengles.openglshape.ProjectionTriangle;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
-public class CreatingMovementActivity extends AppCompatActivity {
+public class RotateRectangleWithUserInputActivity extends AppCompatActivity {
+  private float mCenterX = 0;
+  private float mCenterY = 0;
+
 
   //they use OpenGL Shading Language (GLSL)
   private GLSurfaceView glSurfaceView;
@@ -22,18 +25,32 @@ public class CreatingMovementActivity extends AppCompatActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    glSurfaceView = new CreatingMovementActivity.CustomGLSurfaceView(this);
+    glSurfaceView = new RotateRectangleWithUserInputActivity.CustomGLSurfaceView(this);
     setContentView(glSurfaceView);
   }
 
   class CustomGLSurfaceView extends GLSurfaceView {
-    private final CreatingMovementActivity.GLRenderer glRenderer;
+    private final RotateRectangleWithUserInputActivity.GLRenderer glRenderer;
 
     public CustomGLSurfaceView(Context context) {
       super(context);
       setEGLContextClientVersion(2);
-      glRenderer = new CreatingMovementActivity.GLRenderer();
+      glRenderer = new RotateRectangleWithUserInputActivity.GLRenderer();
       setRenderer(glRenderer);
+      setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+      float x = event.getX();
+      float y = event.getY();
+      switch (event.getAction()){
+        case MotionEvent.ACTION_MOVE:
+          double angleRadians = Math.atan2(y-mCenterY , x-mCenterX);
+          glRenderer.setAngle((float)Math.toDegrees(-angleRadians));
+          requestRender();
+      }
+      return true;
     }
   }
 
@@ -42,6 +59,11 @@ public class CreatingMovementActivity extends AppCompatActivity {
     private final float[] mProjectionMatrix = new float[16];
     private final float[] mViewMatrix = new float[16];
     private float[] mRotationMatrix = new float[16];
+    private volatile float mAngle;
+
+    public void setAngle(float angle){
+      mAngle = angle;
+    }
 
     private ProjectionTriangle projectionTriangle;
     @Override
@@ -55,9 +77,7 @@ public class CreatingMovementActivity extends AppCompatActivity {
       Matrix.multiplyMM(mMVPMatrix,0,mProjectionMatrix,0,mViewMatrix,0);
       GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT);
       float[] tempMatrix = new float[16];
-      long time  = SystemClock.uptimeMillis() % 4000L;  //calculate system update
-      float angle = 0.090f * ((int)time);
-      Matrix.setRotateM(mRotationMatrix,0,angle,0,0,-1.0f);
+      Matrix.setRotateM(mRotationMatrix,0,mAngle,0,0,-1.0f);
       Matrix.multiplyMM(tempMatrix,0,mMVPMatrix,0,mRotationMatrix,0);
       projectionTriangle.draw(tempMatrix);
     }
@@ -65,6 +85,8 @@ public class CreatingMovementActivity extends AppCompatActivity {
     @Override
     public void onSurfaceChanged(GL10 gl, int width, int height) {
       GLES20.glViewport(0,0,width,height);
+      mCenterX = width / 2;
+      mCenterY = height / 2;
       float ratio = (float)width/height;
       Matrix.frustumM(mProjectionMatrix,0,-ratio,ratio,-1,1,3,7);
     }

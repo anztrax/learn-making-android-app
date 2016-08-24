@@ -153,6 +153,8 @@
         </activity>
         <activity android:name=".opengles.CreatingMovementActivity">
         </activity>
+        <activity android:name=".opengles.RotateRectangleWithUserInputActivity">
+        </activity>
     </application>
 
 </manifest>
