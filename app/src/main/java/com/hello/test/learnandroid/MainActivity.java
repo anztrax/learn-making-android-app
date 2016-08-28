@@ -56,6 +56,11 @@ public class MainActivity extends Activity {
     startActivity(intent);
   }
 
+  public void onClickMultimediaMainActivity(View view){
+    Intent intent = new Intent(getApplicationContext(), MultimediaMainActivity.class);
+    startActivity(intent);
+  }
+
   private void doMainActionIntent(String actionString,String message){
     Intent mainActivityIntent = new Intent(this,MainActivity.class);
     mainActivityIntent.setAction(Intent.ACTION_MAIN);

@@ -70,9 +70,18 @@
         android:layout_height="wrap_content"/>
 
     <Button
+        android:id="@+id/learnOpenGLMainActivityBtn"
         android:layout_below="@id/learnGraphicAndAnimationMainActivityBtn"
         android:onClick="onClickLearnOpenGLMainActivity"
         android:text="Learn Open GL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_below="@+id/learnOpenGLMainActivityBtn"
+        android:id="@+id/MultimediaMainActivityBtn"
+        android:text="Multimedia Main Activity"
+        android:onClick="onClickMultimediaMainActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 </RelativeLayout>
