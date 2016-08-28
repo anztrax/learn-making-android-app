@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.hello.test.learnandroid.multimedia.Camera2APIActivity;
+import com.hello.test.learnandroid.multimedia.CameraAPIActivity;
 import com.hello.test.learnandroid.multimedia.HardwareMediaControlsActivity;
 import com.hello.test.learnandroid.multimedia.PlayingSoundEffectWithSoundPoolActivity;
 import com.hello.test.learnandroid.multimedia.UsingDefaultCameraAppActivity;
@@ -28,6 +30,16 @@ public class MultimediaMainActivity extends AppCompatActivity {
 
   public void onClickUsingDefaultCameraAppActivity(View view){
     Intent intent = new Intent(getApplicationContext(), UsingDefaultCameraAppActivity.class);
+    startActivity(intent);
+  }
+
+  public void onClickCameraAPIActivity(View view){
+    Intent intent = new Intent(getApplicationContext(), CameraAPIActivity.class);
+    startActivity(intent);
+  }
+
+  public void onClickCamera2APIActivity(View view){
+    Intent intent = new Intent(getApplicationContext(), Camera2APIActivity.class);
     startActivity(intent);
   }
 }
