@@ -61,6 +61,11 @@ public class MainActivity extends Activity {
     startActivity(intent);
   }
 
+  public void onClickTelephonyNetworkAndWebMainActivity(View view){
+    Intent intent = new Intent(getApplicationContext(),TelephonyNetworkAndWebMainActivity.class);
+    startActivity(intent);
+  }
+
   private void doMainActionIntent(String actionString,String message){
     Intent mainActivityIntent = new Intent(this,MainActivity.class);
     mainActivityIntent.setAction(Intent.ACTION_MAIN);

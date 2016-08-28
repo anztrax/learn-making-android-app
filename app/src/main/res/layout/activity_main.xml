@@ -84,4 +84,12 @@
         android:onClick="onClickMultimediaMainActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_below="@id/MultimediaMainActivityBtn"
+        android:id="@+id/TelephonyNetworkAndWebMainActivityBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telephony , Network, Web activity"
+        android:onClick="onClickTelephonyNetworkAndWebMainActivity"/>
 </RelativeLayout>
