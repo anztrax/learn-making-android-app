@@ -41,4 +41,14 @@
         android:onClick="onClickLearnVolleyLibraryActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+    <Button
+        android:text="Volley With Cancel and Request connection"
+        android:onClick="onClickLearnVolleyWithCancelAndRequestConnectionActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="Volley JSON Request"
+        android:onClick="onClickVolleyRequestJSONActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

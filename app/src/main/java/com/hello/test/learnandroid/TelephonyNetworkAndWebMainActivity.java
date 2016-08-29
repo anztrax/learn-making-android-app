@@ -7,10 +7,12 @@ import android.view.View;
 
 import com.hello.test.learnandroid.telephonynetworkweb.LearnPhoneStateActivity;
 import com.hello.test.learnandroid.telephonynetworkweb.LearnVolleyLibraryActivity;
+import com.hello.test.learnandroid.telephonynetworkweb.LearnVolleyWithCancelAndRequestConnectionActivity;
 import com.hello.test.learnandroid.telephonynetworkweb.LearnWebViewActivity;
 import com.hello.test.learnandroid.telephonynetworkweb.MakePhoneCallActivity;
 import com.hello.test.learnandroid.telephonynetworkweb.ReceiveSMSActivity;
 import com.hello.test.learnandroid.telephonynetworkweb.SendSMSActivity;
+import com.hello.test.learnandroid.telephonynetworkweb.VolleyRequestJSONActivity;
 import com.hello.test.learnandroid.telephonynetworkweb.broadcastreceiver.SMSBroadcastReceiver;
 
 public class TelephonyNetworkAndWebMainActivity extends AppCompatActivity {
@@ -45,6 +47,16 @@ public class TelephonyNetworkAndWebMainActivity extends AppCompatActivity {
   }
   public void onClickLearnVolleyLibraryActivity(View view){
     Intent intent = new Intent(getApplicationContext(), LearnVolleyLibraryActivity.class);
+    startActivity(intent);
+  }
+
+  public void onClickLearnVolleyWithCancelAndRequestConnectionActivity(View view){
+    Intent intent = new Intent(getApplicationContext(), LearnVolleyWithCancelAndRequestConnectionActivity.class);
+    startActivity(intent);
+  }
+
+  public void onClickVolleyRequestJSONActivity(View view){
+    Intent intent = new Intent(getApplicationContext(), VolleyRequestJSONActivity.class);
     startActivity(intent);
   }
 }

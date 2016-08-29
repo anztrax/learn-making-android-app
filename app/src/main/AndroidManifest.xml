@@ -195,6 +195,10 @@
         </activity>
         <activity android:name=".telephonynetworkweb.LearnVolleyLibraryActivity">
         </activity>
+        <activity android:name=".telephonynetworkweb.LearnVolleyWithCancelAndRequestConnectionActivity">
+        </activity>
+        <activity android:name=".telephonynetworkweb.VolleyRequestJSONActivity">
+        </activity>
     </application>
 
 </manifest>
