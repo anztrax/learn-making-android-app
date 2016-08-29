@@ -6,7 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.hello.test.learnandroid.telephonynetworkweb.LearnPhoneStateActivity;
+import com.hello.test.learnandroid.telephonynetworkweb.LearnVolleyLibraryActivity;
+import com.hello.test.learnandroid.telephonynetworkweb.LearnWebViewActivity;
 import com.hello.test.learnandroid.telephonynetworkweb.MakePhoneCallActivity;
+import com.hello.test.learnandroid.telephonynetworkweb.ReceiveSMSActivity;
+import com.hello.test.learnandroid.telephonynetworkweb.SendSMSActivity;
+import com.hello.test.learnandroid.telephonynetworkweb.broadcastreceiver.SMSBroadcastReceiver;
 
 public class TelephonyNetworkAndWebMainActivity extends AppCompatActivity {
 
@@ -23,6 +28,23 @@ public class TelephonyNetworkAndWebMainActivity extends AppCompatActivity {
 
   public void onClickLearnPhoneStateActivity(View view){
     Intent intent = new Intent(getApplicationContext(), LearnPhoneStateActivity.class);
+    startActivity(intent);
+  }
+
+  public void onClickSendSMSActivity(View view){
+    Intent intent = new Intent(getApplicationContext(), SendSMSActivity.class);
+    startActivity(intent);
+  }
+  public void onClickSMSBoardcastReceiver(View view){
+    Intent intent = new Intent(getApplicationContext(), ReceiveSMSActivity.class);
+    startActivity(intent);
+  }
+  public void onClickLearnWebViewActivity(View view){
+    Intent intent = new Intent(getApplicationContext(), LearnWebViewActivity.class);
+    startActivity(intent);
+  }
+  public void onClickLearnVolleyLibraryActivity(View view){
+    Intent intent = new Intent(getApplicationContext(), LearnVolleyLibraryActivity.class);
     startActivity(intent);
   }
 }

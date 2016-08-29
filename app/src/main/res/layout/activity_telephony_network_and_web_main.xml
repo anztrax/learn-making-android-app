@@ -21,4 +21,24 @@
         android:onClick="onClickLearnPhoneStateActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+    <Button
+        android:text="Send SMS Activity"
+        android:onClick="onClickSendSMSActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="Boardcast SMS Receiver"
+        android:onClick="onClickSMSBoardcastReceiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="Learn Web View Activity"
+        android:onClick="onClickLearnWebViewActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="Volley Library Activity"
+        android:onClick="onClickLearnVolleyLibraryActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
