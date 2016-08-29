@@ -12,6 +12,7 @@ import com.hello.test.learnandroid.telephonynetworkweb.LearnWebViewActivity;
 import com.hello.test.learnandroid.telephonynetworkweb.MakePhoneCallActivity;
 import com.hello.test.learnandroid.telephonynetworkweb.ReceiveSMSActivity;
 import com.hello.test.learnandroid.telephonynetworkweb.SendSMSActivity;
+import com.hello.test.learnandroid.telephonynetworkweb.VolleyImageRequestActivity;
 import com.hello.test.learnandroid.telephonynetworkweb.VolleyRequestJSONActivity;
 import com.hello.test.learnandroid.telephonynetworkweb.broadcastreceiver.SMSBroadcastReceiver;
 
@@ -57,6 +58,11 @@ public class TelephonyNetworkAndWebMainActivity extends AppCompatActivity {
 
   public void onClickVolleyRequestJSONActivity(View view){
     Intent intent = new Intent(getApplicationContext(), VolleyRequestJSONActivity.class);
+    startActivity(intent);
+  }
+
+  public void onClickVolleyImageRequestActivity(View view){
+    Intent intent = new Intent(getApplicationContext(),VolleyImageRequestActivity.class);
     startActivity(intent);
   }
 }

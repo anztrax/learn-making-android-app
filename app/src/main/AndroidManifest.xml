@@ -199,6 +199,8 @@
         </activity>
         <activity android:name=".telephonynetworkweb.VolleyRequestJSONActivity">
         </activity>
+        <activity android:name=".telephonynetworkweb.VolleyImageRequestActivity">
+        </activity>
     </application>
 
 </manifest>
