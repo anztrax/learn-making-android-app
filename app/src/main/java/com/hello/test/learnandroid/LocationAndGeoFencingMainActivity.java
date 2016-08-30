@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.hello.test.learnandroid.locationandgeofencing.GetLastLocationActivity;
 import com.hello.test.learnandroid.locationandgeofencing.LearnGoogleMapsActivity;
 
 public class LocationAndGeoFencingMainActivity extends AppCompatActivity {
@@ -17,6 +18,11 @@ public class LocationAndGeoFencingMainActivity extends AppCompatActivity {
 
   public void onClickLearnGoogleMapsActivity(View view){
     Intent intent = new Intent(getApplicationContext(), LearnGoogleMapsActivity.class);
+    startActivity(intent);
+  }
+
+  public void onClickGetLastLocationActivity(View view){
+    Intent intent = new Intent(getApplicationContext(), GetLastLocationActivity.class);
     startActivity(intent);
   }
 }

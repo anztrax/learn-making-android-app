@@ -1,103 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.hello.test.learnandroid.MainActivity">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.hello.test.learnandroid.MainActivity">
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
-    <Button
-        android:id="@+id/gotoSecondButton"
-        android:layout_below="@id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Second Activity"
-        android:onClick="showSecondActivity"/>
-    <Button
-        android:id="@+id/installShortcut"
-        android:layout_below="@id/gotoSecondButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="create shortcut"
-        android:onClick="gotoCreateShortcut"/>
-    <Button
-        android:id="@+id/uninstallShortcut"
-        android:layout_below="@id/installShortcut"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="uninstall shortcut"
-        android:onClick="gotoUnInstallShortcut"/>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"/>
+        <Button
+            android:id="@+id/gotoSecondButton"
+            android:layout_below="@id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second Activity"
+            android:onClick="showSecondActivity"/>
+        <Button
+            android:id="@+id/installShortcut"
+            android:layout_below="@id/gotoSecondButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="create shortcut"
+            android:onClick="gotoCreateShortcut"/>
+        <Button
+            android:id="@+id/uninstallShortcut"
+            android:layout_below="@id/installShortcut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uninstall shortcut"
+            android:onClick="gotoUnInstallShortcut"/>
 
-    <Button
-        android:layout_below="@id/uninstallShortcut"
-        android:id="@+id/dataSectionBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Data Section"
-        android:onClick="onClickDataSectionBtn"/>
-    
-    <Button
-        android:layout_below="@id/dataSectionBtn"
-        android:id="@+id/notificationsAndAlerts"
-        android:text="Notifications and Alerts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onClickNotificationsAndAlerts"/>
+        <Button
+            android:layout_below="@id/uninstallShortcut"
+            android:id="@+id/dataSectionBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Section"
+            android:onClick="onClickDataSectionBtn"/>
 
-    <Button
-        android:layout_below="@id/notificationsAndAlerts"
-        android:id="@+id/touchScreenAndSensors"
-        android:text="Touchscreen and Sensors"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onClickTouchScreenAndSensorsActivity"/>
+        <Button
+            android:layout_below="@id/dataSectionBtn"
+            android:id="@+id/notificationsAndAlerts"
+            android:text="Notifications and Alerts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickNotificationsAndAlerts"/>
 
-    <Button
-        android:id="@+id/learnGraphicAndAnimationMainActivityBtn"
-        android:layout_below="@id/touchScreenAndSensors"
-        android:onClick="onClickLearnGraphicAndAnimationMainActivity"
-        android:text="Learn Graphic And Animation Activity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Button
+            android:layout_below="@id/notificationsAndAlerts"
+            android:id="@+id/touchScreenAndSensors"
+            android:text="Touchscreen and Sensors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickTouchScreenAndSensorsActivity"/>
 
-    <Button
-        android:id="@+id/learnOpenGLMainActivityBtn"
-        android:layout_below="@id/learnGraphicAndAnimationMainActivityBtn"
-        android:onClick="onClickLearnOpenGLMainActivity"
-        android:text="Learn Open GL"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/learnGraphicAndAnimationMainActivityBtn"
+            android:layout_below="@id/touchScreenAndSensors"
+            android:onClick="onClickLearnGraphicAndAnimationMainActivity"
+            android:text="Learn Graphic And Animation Activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-    <Button
-        android:layout_below="@+id/learnOpenGLMainActivityBtn"
-        android:id="@+id/MultimediaMainActivityBtn"
-        android:text="Multimedia Main Activity"
-        android:onClick="onClickMultimediaMainActivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/learnOpenGLMainActivityBtn"
+            android:layout_below="@id/learnGraphicAndAnimationMainActivityBtn"
+            android:onClick="onClickLearnOpenGLMainActivity"
+            android:text="Learn Open GL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-    <Button
-        android:layout_below="@id/MultimediaMainActivityBtn"
-        android:id="@+id/TelephonyNetworkAndWebMainActivityBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Telephony , Network, Web activity"
-        android:onClick="onClickTelephonyNetworkAndWebMainActivity"/>
+        <Button
+            android:layout_below="@+id/learnOpenGLMainActivityBtn"
+            android:id="@+id/MultimediaMainActivityBtn"
+            android:text="Multimedia Main Activity"
+            android:onClick="onClickMultimediaMainActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-    <Button
-        android:layout_below="@id/TelephonyNetworkAndWebMainActivityBtn"
-        android:id="@+id/LocationAndGeoFencingMainActivityBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Location , GeoFencing"
-        android:onClick="onClickLocationAndGeoFencingMainActivityBtn"/>
-</RelativeLayout>
+        <Button
+            android:layout_below="@id/MultimediaMainActivityBtn"
+            android:id="@+id/TelephonyNetworkAndWebMainActivityBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telephony , Network, Web activity"
+            android:onClick="onClickTelephonyNetworkAndWebMainActivity"/>
+
+        <Button
+            android:layout_below="@id/TelephonyNetworkAndWebMainActivityBtn"
+            android:id="@+id/LocationAndGeoFencingMainActivityBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location , GeoFencing"
+            android:onClick="onClickLocationAndGeoFencingMainActivityBtn"/>
+    </RelativeLayout>
+</ScrollView>

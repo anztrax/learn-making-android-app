@@ -63,11 +63,6 @@ public class LearnGoogleMapsActivity extends FragmentActivity implements OnMapRe
       REQUEST_FINE_LOCATION);
   }
 
-  private boolean checkPermission(String permission) {
-    int permissionCheck = ContextCompat.checkSelfPermission(
-      this, permission);
-    return (permissionCheck == PackageManager.PERMISSION_GRANTED);
-  }
 
 
   /**
