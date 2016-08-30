@@ -92,4 +92,12 @@
         android:layout_height="wrap_content"
         android:text="Telephony , Network, Web activity"
         android:onClick="onClickTelephonyNetworkAndWebMainActivity"/>
+
+    <Button
+        android:layout_below="@id/TelephonyNetworkAndWebMainActivityBtn"
+        android:id="@+id/LocationAndGeoFencingMainActivityBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location , GeoFencing"
+        android:onClick="onClickLocationAndGeoFencingMainActivityBtn"/>
 </RelativeLayout>

@@ -29,4 +29,5 @@
     </string>
     <string name="title_activity_searchable_menu">SearchableMenuActivity</string>
     <string name="title_activity_search_result">SearchResultActivity</string>
+    <string name="title_activity_learn_google_maps">Map</string>
 </resources>

@@ -10,6 +10,7 @@ import com.hello.test.learnandroid.telephonynetworkweb.LearnVolleyLibraryActivit
 import com.hello.test.learnandroid.telephonynetworkweb.LearnVolleyWithCancelAndRequestConnectionActivity;
 import com.hello.test.learnandroid.telephonynetworkweb.LearnWebViewActivity;
 import com.hello.test.learnandroid.telephonynetworkweb.MakePhoneCallActivity;
+import com.hello.test.learnandroid.telephonynetworkweb.NetworkImageViewActivity;
 import com.hello.test.learnandroid.telephonynetworkweb.ReceiveSMSActivity;
 import com.hello.test.learnandroid.telephonynetworkweb.SendSMSActivity;
 import com.hello.test.learnandroid.telephonynetworkweb.VolleyImageRequestActivity;
@@ -63,6 +64,11 @@ public class TelephonyNetworkAndWebMainActivity extends AppCompatActivity {
 
   public void onClickVolleyImageRequestActivity(View view){
     Intent intent = new Intent(getApplicationContext(),VolleyImageRequestActivity.class);
+    startActivity(intent);
+  }
+
+  public void onClickNetworkImageViewActivity(View view){
+    Intent intent = new Intent(getApplicationContext(),NetworkImageViewActivity.class);
     startActivity(intent);
   }
 }
